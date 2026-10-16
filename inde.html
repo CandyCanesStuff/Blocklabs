@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlockBotz</title>
+    <link rel="icon" type="image/x-icon" href="blockbotz1to1ratio.jpg">
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .hero {
+            padding: 48px 0 8px;
+            max-width: 640px;
+        }
+        .hero p.tagline {
+            font-size: 1.15rem;
+            line-height: 1.5;
+            font-weight: 400;
+        }
+        #greeting {
+            margin: 0 0 4px;
+        }
+        #numboffriendsonline {
+            color: rgb(0, 131, 192);
+            font-weight: 700;
+            margin: 0 0 20px;
+        }
+        .steps {
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+            max-width: 560px;
+            margin: 32px 0 48px;
+        }
+        .step {
+            display: flex;
+            gap: 16px;
+            align-items: flex-start;
+        }
+        .step-mark {
+            flex: 0 0 auto;
+            width: 40px;
+            height: 40px;
+            border-radius: 10px;
+            background: rgb(0, 131, 192);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 900;
+            font-family: "Open Sans", sans-serif;
+        }
+        .step h3 {
+            margin: 0 0 4px;
+        }
+        .step p {
+            margin: 0;
+            font-weight: 400;
+        }
+    </style>
+</head>
+<body>
+    <div id="navbar"></div>
+    <div id="sidebar"></div>
+    <main>
+        <div class="hero">
+            <img src="blockbotztitlev2.png" alt="BlockBotz" width="360">
+            <p id="greeting"></p>
+            <p id="numboffriendsonline"></p>
+            <h1>Start Creating and Playing Today!</h1>
+            <p class="tagline">Build worlds, invite your friends, and jump in together — no waiting, no gatekeeping.</p>
+            <button onclick="window.location.href='download.html'">Play Now</button>
+        </div>
+
+        <div class="steps">
+            <div class="step">
+                <div class="step-mark">1</div>
+                <div><h3>Download BlockBotz</h3><p>Get the app for your computer, free.</p></div>
+            </div>
+            <div class="step">
+                <div class="step-mark">2</div>
+                <div><h3>Pick something to play</h3><p>Jump into any game right away.</p></div>
+            </div>
+            <div class="step">
+                <div class="step-mark">3</div>
+                <div><h3>Build your own</h3><p>Use the block editor to make something and share it.</p></div>
+            </div>
+        </div>
+    </main>
+    <div id="footer"></div>
+
+    <script src="scripts/isloggedin.js"></script>
+    <script src="scripts/load.js"></script>
+</body>
+</html>
